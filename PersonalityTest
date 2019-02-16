@@ -1,0 +1,74 @@
+import java.io.*;
+import java.util.Scanner;
+
+
+public class PersonalityTest {
+	public static void main(String[] args)throws IOException {
+		String input;
+		String MenuChoice;
+		
+
+			//create a scanner object for keyboard input
+			Scanner keyboard = new Scanner(System.in);
+			
+			
+			//display and get choice of user
+			System.out.println("Welcome to Harvard Personalty Test!");
+			System.out.println("Menu Options: ");
+			System.out.println("A - Take Personality Test");
+			System.out.println("B - Unprocessed Tests");
+			System.out.println("C - Display number of people in each personality type ");
+			System.out.println("D - End Program");
+			System.out.print("Your Choice: ");
+			input = keyboard.nextLine();
+			MenuChoice = input.toUpperCase();
+			
+			while (input != "A" || input !="B" || input !="C" || input !="D"){
+				System.out.println("Invalid Option! Please select A/B/C/D");
+					//display and get choice of user
+			System.out.println("Welcome to Harvard Personalty Test!");
+			System.out.println("Menu Options: ");
+			System.out.println("A - Take Personality Test");
+			System.out.println("B - Unprocessed Tests");
+			System.out.println("C - Display number of people in each personality type ");
+			System.out.println("D - End Program");
+			System.out.print("Your Choice: ");
+      input = keyboard.nextLine();
+			MenuChoice = input.toUpperCase();
+      
+			}//end of while for menu
+		
+			//switch for choice from menu
+			switch(input){
+			case "A":
+			case "a":
+				//Get users first name
+				//String FirstName;
+				
+				//System.out.print("Enter in your First Name: ");
+				
+				
+				break;
+			case "B":
+			case "b":
+				System.out.println("You chose b");
+				break;
+			case "C":
+			case "c":
+				System.out.println("You chose c");
+				break;
+			case "D":
+			case "d":
+				System.out.println("You chose d");
+				break;
+			default:
+				System.out.println("PLease enter in one of these values: A, a, B, b, C, c, D, d");
+					
+				
+			}//end of switch menu
+			
+		
+
+	}//end of main
+
+}//end of class
